@@ -1,5 +1,4 @@
 import { Nunito, Inter } from "next/font/google";
-import FlyonuiScript from "./components/FlyonuiScript";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -26,7 +25,6 @@ export default function RootLayout({ children }) {
         className={`${nunito.variable} ${inter.variable} antialiased`}
       >
         {children}
-        <FlyonuiScript />
       </body>
     </html>
   );
