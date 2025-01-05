@@ -19,3 +19,32 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.slider-container .slick-arrow {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 50%;
+}
+
+.slider-container .slick-arrow::before {
+  display: inline-block;
+  width: 12px;
+  color: #fff;
+}
+
+.slider-container .slick-arrow.slick-prev {
+  left: 30px;
+}
+
+.slider-container .slick-arrow.slick-prev::before {
+  content: url(../../public/images/icons/chevron-left-light.svg);
+}
+
+.slider-container .slick-arrow.slick-next {  
+  right: 30px;
+}
+
+.slider-container .slick-arrow.slick-next::before {
+  content: url(../../public/images/icons/chevron-right-light.svg);
+}
