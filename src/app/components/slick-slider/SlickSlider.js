@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function SlickSlider() {
     const settings = {
-        // autoplay: true,
+        autoplay: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
