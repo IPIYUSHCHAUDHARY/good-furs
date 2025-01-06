@@ -6,12 +6,6 @@ import Link from 'next/link';
 import { LocationIcon, SearchIcon, ChevronDownIcon, LoginIcon, ChevronRightIcon } from '../icons/Icons';
 import { useState } from 'react';
 
-const navigation = [
-    { name: 'All Puppies', href: '#' },
-    { name: 'Puppy Breeds', href: '#' },
-    { name: 'Sell Puppy', href: '#' },
-]
-
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
