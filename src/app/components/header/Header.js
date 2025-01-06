@@ -3,7 +3,7 @@
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react'
 import Image from 'next/image';
 import Link from 'next/link';
-import { LocationIcon, ShopIcon, SearchIcon, ChevronDownIcon, LoginIcon, ChevronRightIcon } from '../icons/Icons';
+import { LocationIcon, SearchIcon, ChevronDownIcon, LoginIcon, ChevronRightIcon } from '../icons/Icons';
 import { useState } from 'react';
 
 const navigation = [
