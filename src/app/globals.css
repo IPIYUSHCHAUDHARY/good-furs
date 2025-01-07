@@ -17,7 +17,56 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), "sans-serif";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-inter), "sans-serif";
+}
+.view-all-btn {
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  background: #fe7a27;
+  border: 1px solid #fe7a27;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 45px auto 0;
+}
+
+.view-all-btn:hover {
+  background: #fff;
+  color: #fe7a27;
+}
+
+.section-double-heading {
+  color: #121212;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section-double-heading span {
+  color: #707e83;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .slider-container .slick-arrow {
@@ -42,10 +91,125 @@ body {
   content: url(../../public/images/icons/chevron-left-light.svg);
 }
 
-.slider-container .slick-arrow.slick-next {  
+.slider-container .slick-arrow.slick-next {
   right: 30px;
 }
 
 .slider-container .slick-arrow.slick-next::before {
   content: url(../../public/images/icons/chevron-right-light.svg);
+}
+
+.benefits-container {
+  background: linear-gradient(180deg, #DECDEB 0%, #FFFFFF 100%);
+}
+
+.work-card-heading {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  margin-bottom: 32px;
+  margin-top: 50px;
+}
+
+.work-card-number {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
+.blog-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 12px;
+  background: linear-gradient(0deg, #0000001f 0% 100%),
+    linear-gradient(#0000 49.5%, #000000d6 92.36%);
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 24px;
+}
+
+.blog-heading {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.blog-desc {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.location-name {
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+.pets-count {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+.location-image {
+  width: 178px;
+  height: 178px;
+  border-radius: 50%;
+  object-fit: cover;
+  top: -89px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.location-card {
+  margin-top: 125px;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  padding: 50px;
+}
+
+.testimonial-card {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 36%,
+      rgba(0, 0, 0, 0.442897) 61.5%,
+      rgba(0, 0, 0, 0.64) 92.36%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34));
+  height: 100%;
 }

@@ -10,7 +10,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className='pe-4'>
+        <header className='bg-white pe-4'>
             <div className="container-full mx-auto flex justify-between items-center">
                 {/* Logo Section */}
                 <div className="flex ">
